@@ -1,0 +1,185 @@
+<svg viewBox="0 0 680 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    </style>
+  </defs>
+  <desc>AI Workspace 主界面原型 - 左侧导航+对话中心+任务面板</desc>
+
+  <!-- 整体背景 -->
+  <rect width="680" height="500" fill="#f5f5f4" rx="8"/>
+
+  <!-- 左侧导航栏 -->
+  <rect x="0" y="0" width="56" height="500" fill="#1c1c1a" rx="8"/>
+  <rect x="8" y="0" width="48" height="500" fill="#1c1c1a"/>
+  
+  <!-- 导航图标 -->
+  <!-- Logo -->
+  <circle cx="28" cy="28" r="14" fill="#534AB7"/>
+  <text x="28" y="33" text-anchor="middle" fill="white" font-size="14" font-weight="500">A</text>
+  
+  <!-- 对话 -->
+  <rect x="16" y="64" width="24" height="24" rx="4" fill="transparent" stroke="#888780" stroke-width="1.5"/>
+  <line x1="22" y1="72" x2="34" y2="72" stroke="#888780" stroke-width="1.5"/>
+  <line x1="22" y1="77" x2="30" y2="77" stroke="#888780" stroke-width="1.5"/>
+  <text x="28" y="100" text-anchor="middle" fill="#888780" font-size="8">对话</text>
+  
+  <!-- 任务 (选中态) -->
+  <rect x="14" y="114" width="28" height="28" rx="6" fill="#534AB7" opacity="0.15"/>
+  <rect x="18" y="118" width="20" height="3" rx="1" fill="#534AB7"/>
+  <rect x="18" y="124" width="14" height="3" rx="1" fill="#534AB7"/>
+  <rect x="18" y="130" width="18" height="3" rx="1" fill="#534AB7"/>
+  <text x="28" y="152" text-anchor="middle" fill="#534AB7" font-size="8" font-weight="500">任务</text>
+  
+  <!-- 工具 -->
+  <circle cx="28" cy="180" r="8" fill="transparent" stroke="#888780" stroke-width="1.5"/>
+  <line x1="28" y1="176" x2="28" y2="184" stroke="#888780" stroke-width="1.5"/>
+  <line x1="24" y1="180" x2="32" y2="180" stroke="#888780" stroke-width="1.5"/>
+  <text x="28" y="200" text-anchor="middle" fill="#888780" font-size="8">工具</text>
+  
+  <!-- 模型 -->
+  <rect x="20" y="216" width="16" height="12" rx="3" fill="transparent" stroke="#888780" stroke-width="1.5"/>
+  <line x1="22" y1="220" x2="34" y2="220" stroke="#888780" stroke-width="1"/>
+  <circle cx="24" cy="224" r="1.5" fill="#888780"/>
+  <text x="28" y="240" text-anchor="middle" fill="#888780" font-size="8">模型</text>
+  
+  <!-- 设置 -->
+  <circle cx="28" cy="264" r="8" fill="transparent" stroke="#888780" stroke-width="1.5"/>
+  <circle cx="28" cy="264" r="3" fill="transparent" stroke="#888780" stroke-width="1.5"/>
+  <text x="28" y="284" text-anchor="middle" fill="#888780" font-size="8">设置</text>
+
+  <!-- 中间对话区域 -->
+  <rect x="56" y="0" width="390" height="500" fill="#ffffff"/>
+  
+  <!-- 顶部栏 -->
+  <rect x="56" y="0" width="390" height="44" fill="#ffffff"/>
+  <line x1="56" y1="44" x2="446" y2="44" stroke="#e5e5e0" stroke-width="0.5"/>
+  
+  <!-- 会话标签 -->
+  <rect x="68" y="10" width="120" height="26" rx="6" fill="#f5f5f4"/>
+  <text x="82" y="27" fill="#2c2c2a" font-size="12" font-weight="500">AI Workspace 设计</text>
+  
+  <!-- 工作模式切换 -->
+  <rect x="280" y="10" width="52" height="24" rx="12" fill="#534AB7"/>
+  <text x="306" y="26" text-anchor="middle" fill="white" font-size="10" font-weight="500">Craft</text>
+  <rect x="336" y="10" width="48" height="24" rx="12" fill="transparent" stroke="#d3d1c7" stroke-width="0.5"/>
+  <text x="360" y="26" text-anchor="middle" fill="#888780" font-size="10">Plan</text>
+  <rect x="388" y="10" width="44" height="24" rx="12" fill="transparent" stroke="#d3d1c7" stroke-width="0.5"/>
+  <text x="410" y="26" text-anchor="middle" fill="#888780" font-size="10">Ask</text>
+
+  <!-- 用户消息 -->
+  <rect x="72" y="56" width="300" height="32" rx="12" fill="#534AB7" opacity="0.1"/>
+  <text x="84" y="76" fill="#2c2c2a" font-size="12">帮我整理项目里的 TODO 注释</text>
+
+  <!-- Agent 回复 - 任务规划 -->
+  <text x="72" y="108" fill="#534AB7" font-size="11" font-weight="500">Agent</text>
+  <text x="108" y="108" fill="#888780" font-size="10">正在规划任务...</text>
+  
+  <!-- 任务卡片 -->
+  <rect x="72" y="118" width="360" height="130" rx="8" fill="#ffffff" stroke="#e5e5e0" stroke-width="0.5"/>
+  
+  <!-- 任务1 - 已完成 -->
+  <rect x="84" y="130" width="336" height="24" rx="4" fill="#eaf3de"/>
+  <circle cx="96" cy="142" r="6" fill="#639922"/>
+  <text x="96" y="145" text-anchor="middle" fill="white" font-size="8">✓</text>
+  <text x="110" y="146" fill="#2c2c2a" font-size="11">扫描项目目录结构</text>
+  <text x="390" y="146" text-anchor="end" fill="#888780" font-size="9">0.3s</text>
+
+  <!-- 任务2 - 已完成 -->
+  <rect x="84" y="158" width="336" height="24" rx="4" fill="#eaf3de"/>
+  <circle cx="96" cy="170" r="6" fill="#639922"/>
+  <text x="96" y="173" text-anchor="middle" fill="white" font-size="8">✓</text>
+  <text x="110" y="174" fill="#2c2c2a" font-size="11">搜索所有文件中的 TODO 注释</text>
+  <text x="390" y="174" text-anchor="end" fill="#888780" font-size="9">1.2s</text>
+
+  <!-- 任务3 - 执行中 -->
+  <rect x="84" y="186" width="336" height="24" rx="4" fill="#e6f1fb"/>
+  <circle cx="96" cy="198" r="6" fill="#378ADD"/>
+  <rect x="93" y="195" width="6" height="6" rx="1" fill="white"/>
+  <text x="110" y="202" fill="#2c2c2a" font-size="11" font-weight="500">提取并分类 TODO 内容</text>
+  <text x="390" y="202" text-anchor="end" fill="#378ADD" font-size="9">执行中...</text>
+
+  <!-- 任务4 - 待执行 -->
+  <rect x="84" y="214" width="336" height="24" rx="4" fill="#f5f5f4"/>
+  <circle cx="96" cy="226" r="6" fill="transparent" stroke="#d3d1c7" stroke-width="1"/>
+  <text x="110" y="230" fill="#888780" font-size="11">生成 TODO 列表文档</text>
+  <text x="390" y="230" text-anchor="end" fill="#d3d1c7" font-size="9">等待中</text>
+
+  <!-- Agent 文字回复 -->
+  <text x="72" y="270" fill="#2c2c2a" font-size="12">已找到 23 个源码文件，正在扫描 TODO 注释...</text>
+  
+  <!-- 工具调用详情 (可展开) -->
+  <rect x="72" y="282" width="360" height="52" rx="6" fill="#f5f5f4"/>
+  <text x="84" y="300" fill="#888780" font-size="10">🔧 grep -rn "TODO" ./src/</text>
+  <text x="84" y="318" fill="#888780" font-size="10">📊 找到 15 条 TODO，分布 8 个文件中</text>
+
+  <!-- 输入框区域 -->
+  <rect x="68" y="450" width="368" height="40" rx="12" fill="#ffffff" stroke="#d3d1c7" stroke-width="0.5"/>
+  <text x="84" y="474" fill="#888780" font-size="12">输入目标，Agent 自动规划执行...</text>
+  
+  <!-- 发送按钮 -->
+  <circle cx="422" cy="470" r="14" fill="#534AB7"/>
+  <line x1="417" y1="470" x2="427" y2="470" stroke="white" stroke-width="1.5"/>
+  <line x1="422" y1="465" x2="422" y2="475" stroke="white" stroke-width="1.5"/>
+
+  <!-- 右侧面板 -->
+  <rect x="446" y="0" width="234" height="500" fill="#fafaf8"/>
+  <line x1="446" y1="0" x2="446" y2="500" stroke="#e5e5e0" stroke-width="0.5"/>
+  
+  <!-- 右侧面板标题 -->
+  <text x="462" y="26" fill="#2c2c2a" font-size="13" font-weight="500">执行详情</text>
+  
+  <!-- 当前模型 -->
+  <rect x="458" y="38" width="210" height="32" rx="6" fill="#ffffff" stroke="#e5e5e0" stroke-width="0.5"/>
+  <circle cx="474" cy="54" r="8" fill="#534AB7" opacity="0.15"/>
+  <text x="474" y="58" text-anchor="middle" fill="#534AB7" font-size="8">C</text>
+  <text x="490" y="50" fill="#2c2c2a" font-size="10" font-weight="500">Claude Sonnet 4</text>
+  <text x="490" y="62" fill="#888780" font-size="9">已用 2,847 tokens</text>
+  
+  <!-- 执行时间线 -->
+  <text x="462" y="92" fill="#888780" font-size="10" font-weight="500">执行时间线</text>
+  
+  <!-- 时间线节点1 -->
+  <circle cx="470" cy="112" r="4" fill="#639922"/>
+  <text x="482" y="116" fill="#2c2c2a" font-size="10">文件搜索完成</text>
+  <text x="636" y="116" text-anchor="end" fill="#888780" font-size="9">10:02</text>
+  
+  <!-- 连接线 -->
+  <line x1="470" y1="116" x2="470" y2="132" stroke="#d3d1c7" stroke-width="1"/>
+  
+  <!-- 时间线节点2 -->
+  <circle cx="470" cy="136" r="4" fill="#639922"/>
+  <text x="482" y="140" fill="#2c2c2a" font-size="10">TODO 提取完成</text>
+  <text x="636" y="140" text-anchor="end" fill="#888780" font-size="9">10:03</text>
+  
+  <line x1="470" y1="140" x2="470" y2="156" stroke="#d3d1c7" stroke-width="1"/>
+  
+  <!-- 时间线节点3 (进行中) -->
+  <circle cx="470" cy="160" r="4" fill="#378ADD"/>
+  <rect x="466" y="156" width="8" height="8" rx="4" fill="#378ADD" opacity="0.3"/>
+  <text x="482" y="164" fill="#2c2c2a" font-size="10" font-weight="500">分类整理中...</text>
+  <text x="636" y="164" text-anchor="end" fill="#378ADD" font-size="9">进行中</text>
+  
+  <line x1="470" y1="164" x2="470" y2="180" stroke="#d3d1c7" stroke-width="1" stroke-dasharray="2"/>
+  
+  <!-- 时间线节点4 (待执行) -->
+  <circle cx="470" cy="184" r="4" fill="transparent" stroke="#d3d1c7" stroke-width="1"/>
+  <text x="482" y="188" fill="#888780" font-size="10">生成文档</text>
+  <text x="636" y="188" text-anchor="end" fill="#d3d1c7" font-size="9">待执行</text>
+
+  <!-- 上下文文件列表 -->
+  <text x="462" y="220" fill="#888780" font-size="10" font-weight="500">上下文文件</text>
+  <rect x="458" y="230" width="210" height="28" rx="4" fill="#ffffff" stroke="#e5e5e0" stroke-width="0.5"/>
+  <text x="470" y="248" fill="#2c2c2a" font-size="10">📁 ./src/</text>
+  <text x="636" y="248" text-anchor="end" fill="#888780" font-size="9">23 files</text>
+  
+  <rect x="458" y="262" width="210" height="28" rx="4" fill="#ffffff" stroke="#e5e5e0" stroke-width="0.5"/>
+  <text x="470" y="280" fill="#2c2c2a" font-size="10">📄 TODO.md</text>
+  <text x="636" y="280" text-anchor="end" fill="#888780" font-size="9">output</text>
+
+  <!-- 记忆面板 -->
+  <text x="462" y="310" fill="#888780" font-size="10" font-weight="500">工作记忆</text>
+  <rect x="458" y="320" width="210" height="44" rx="4" fill="#faf0e6" stroke="#e5e5e0" stroke-width="0.5"/>
+  <text x="470" y="336" fill="#2c2c2a" font-size="9">该项目使用 TypeScript + React</text>
+  <text x="470" y="350" fill="#888780" font-size="8">来自长期记忆 · 2026-05-10</text>
+</svg>
