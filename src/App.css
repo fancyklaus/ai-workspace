@@ -120,3 +120,95 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #a8a8a8;
 }
+
+/* 聊天布局 */
+.app-content {
+  flex: 1;
+  display: flex;
+  background: #f5f7fa;
+}
+
+.chat-sidebar {
+  width: 220px;
+  background: #fff;
+  border-right: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-header {
+  padding: 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.sidebar-header h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.chat-sidebar .agent-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 8px;
+}
+
+.no-agents {
+  text-align: center;
+  padding: 24px 16px;
+  color: #6b7280;
+}
+
+.no-agents p {
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.no-agents button {
+  padding: 8px 16px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.agent-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 10px 12px;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.15s;
+  margin-bottom: 4px;
+}
+
+.agent-item:hover {
+  background: #f3f4f6;
+}
+
+.agent-item.active {
+  background: #eef2ff;
+}
+
+.agent-item .agent-icon {
+  font-size: 16px;
+}
+
+.agent-item .agent-name {
+  font-size: 14px;
+  color: #374151;
+}
+
+.chat-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}

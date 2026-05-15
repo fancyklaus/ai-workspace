@@ -1,8 +1,8 @@
 import { invoke } from '@tauri-apps/api/core';
-import type { 
-  ModelParams, 
-  ChatResponse, 
-  Agent, 
+import type {
+  ModelParams,
+  ChatResponse,
+  Agent,
   CreateAgentRequest,
   Crew,
   CreateCrewRequest,
@@ -61,5 +61,35 @@ export const crewService = {
   // 获取Crew状态
   async getCrewStatus(crewId: string): Promise<CrewStatus | null> {
     return invoke<CrewStatus | null>('get_crew_status', { crewId });
+  },
+};
+
+// 聊天服务
+export const chatService = {
+  // 流式聊天
+  async chatStream(request: {
+    conversationId: string;
+    modelName: string;
+    messages: { role: string; content: string }[];
+    temperature?: number;
+  }): Promise<string> {
+    return invoke<string>('chat_stream', { request });
+  },
+
+  // 获取对话历史
+  async getConversationHistory(conversationId: string): Promise<
+    { role: string; content: string }[]
+  > {
+    return invoke('get_conversation_history', { conversationId });
+  },
+
+  // 创建新对话
+  async createConversation(): Promise<string> {
+    return invoke<string>('create_conversation');
+  },
+
+  // 清除对话
+  async clearConversation(conversationId: string): Promise<void> {
+    return invoke('clear_conversation', { conversationId });
   },
 };

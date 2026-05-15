@@ -1,0 +1,151 @@
+.chat-message {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.chat-message.user {
+  flex-direction: row-reverse;
+}
+
+.message-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+  background: #f0f0f0;
+}
+
+.chat-message.user .message-avatar {
+  background: #e3f2fd;
+}
+
+.chat-message.assistant .message-avatar {
+  background: #f5f5f5;
+}
+
+.message-content {
+  max-width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.chat-message.user .message-content {
+  align-items: flex-end;
+}
+
+.message-bubble {
+  padding: 12px 16px;
+  border-radius: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.chat-message.user .message-bubble {
+  background: #e3f2fd;
+  border-radius: 16px 16px 4px 16px;
+  color: #1f2937;
+}
+
+.chat-message.assistant .message-bubble {
+  background: #f5f5f5;
+  border-radius: 16px 16px 16px 4px;
+  color: #1f2937;
+}
+
+.chat-message.error .message-bubble {
+  background: #fef2f2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+}
+
+/* Markdown 样式 */
+.message-bubble p {
+  margin: 0 0 8px 0;
+}
+
+.message-bubble p:last-child {
+  margin-bottom: 0;
+}
+
+.message-bubble ul,
+.message-bubble ol {
+  margin: 8px 0;
+  padding-left: 24px;
+}
+
+.message-bubble li {
+  margin: 4px 0;
+}
+
+.message-bubble strong {
+  font-weight: 600;
+}
+
+.message-bubble em {
+  font-style: italic;
+}
+
+.inline-code {
+  background: rgba(0, 0, 0, 0.08);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+  font-size: 0.9em;
+}
+
+.code-block {
+  background: #1f2937;
+  color: #e5e7eb;
+  padding: 12px 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 8px 0;
+  font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.code-block code {
+  font-family: inherit;
+}
+
+.message-bubble a {
+  color: #4f46e5;
+  text-decoration: underline;
+}
+
+.message-bubble a:hover {
+  color: #4338ca;
+}
+
+.message-bubble blockquote {
+  border-left: 3px solid #d1d5db;
+  margin: 8px 0;
+  padding-left: 12px;
+  color: #6b7280;
+}
+
+.message-time {
+  font-size: 11px;
+  color: #9ca3af;
+  padding: 0 4px;
+}
