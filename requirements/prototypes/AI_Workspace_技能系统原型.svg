@@ -1,0 +1,147 @@
+<svg viewBox="0 0 680 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    </style>
+  </defs>
+  <desc>AI Workspace 技能系统页面原型 - 技能市场+已安装技能+技能详情</desc>
+
+  <rect width="680" height="500" fill="#f5f5f4" rx="8"/>
+
+  <!-- 左侧导航 -->
+  <rect x="0" y="0" width="56" height="500" fill="#1c1c1a" rx="8"/>
+  <rect x="8" y="0" width="48" height="500" fill="#1c1c1a"/>
+  <circle cx="28" cy="28" r="14" fill="#534AB7"/>
+  <text x="28" y="33" text-anchor="middle" fill="white" font-size="14" font-weight="500">A</text>
+
+  <!-- 导航项 - 技能选中 -->
+  <rect x="14" y="150" width="28" height="28" rx="6" fill="#534AB7" opacity="0.15"/>
+  <!-- 技能图标：闪电+书本组合 -->
+  <rect x="20" y="156" width="16" height="16" rx="3" fill="transparent" stroke="#534AB7" stroke-width="1.5"/>
+  <line x1="26" y1="160" x2="30" y2="164" stroke="#534AB7" stroke-width="1.5"/>
+  <line x1="30" y1="160" x2="26" y2="168" stroke="#534AB7" stroke-width="1.5"/>
+  <text x="28" y="188" text-anchor="middle" fill="#534AB7" font-size="8" font-weight="500">技能</text>
+
+  <!-- 其他导航项 -->
+  <!-- 对话 -->
+  <rect x="16" y="64" width="24" height="24" rx="4" fill="transparent" stroke="#888780" stroke-width="1.5"/>
+  <line x1="22" y1="72" x2="34" y2="72" stroke="#888780" stroke-width="1.5"/>
+  <line x1="22" y1="77" x2="30" y2="77" stroke="#888780" stroke-width="1.5"/>
+  <text x="28" y="100" text-anchor="middle" fill="#888780" font-size="8">对话</text>
+
+  <!-- 任务 -->
+  <rect x="18" y="114" width="20" height="3" rx="1" fill="#888780"/>
+  <rect x="18" y="120" width="14" height="3" rx="1" fill="#888780"/>
+  <rect x="18" y="126" width="18" height="3" rx="1" fill="#888780"/>
+  <text x="28" y="142" text-anchor="middle" fill="#888780" font-size="8">任务</text>
+
+  <!-- 工具 -->
+  <circle cx="28" cy="210" r="8" fill="transparent" stroke="#888780" stroke-width="1.5"/>
+  <line x1="28" y1="206" x2="28" y2="214" stroke="#888780" stroke-width="1.5"/>
+  <line x1="24" y1="210" x2="32" y2="210" stroke="#888780" stroke-width="1.5"/>
+  <text x="28" y="230" text-anchor="middle" fill="#888780" font-size="8">工具</text>
+
+  <!-- 模型 -->
+  <rect x="20" y="246" width="16" height="12" rx="3" fill="transparent" stroke="#888780" stroke-width="1.5"/>
+  <line x1="22" y1="250" x2="34" y2="250" stroke="#888780" stroke-width="1"/>
+  <circle cx="24" cy="254" r="1.5" fill="#888780"/>
+  <text x="28" y="270" text-anchor="middle" fill="#888780" font-size="8">模型</text>
+
+  <!-- 设置 -->
+  <circle cx="28" cy="294" r="8" fill="transparent" stroke="#888780" stroke-width="1.5"/>
+  <circle cx="28" cy="294" r="3" fill="transparent" stroke="#888780" stroke-width="1.5"/>
+  <text x="28" y="314" text-anchor="middle" fill="#888780" font-size="8">设置</text>
+
+  <!-- 主内容区 -->
+  <rect x="56" y="0" width="624" height="500" fill="#ffffff"/>
+
+  <!-- 页面标题 -->
+  <text x="76" y="32" fill="#2c2c2a" font-size="15" font-weight="500">技能系统</text>
+  <text x="76" y="48" fill="#888780" font-size="11">Agent 的领域专家能力 — 安装、管理、创建技能</text>
+
+  <!-- 创建技能按钮 -->
+  <rect x="540" y="16" width="120" height="28" rx="6" fill="#534AB7"/>
+  <text x="556" y="34" fill="white" font-size="11" font-weight="500">+ 创建技能</text>
+
+  <!-- Tab 切换 -->
+  <rect x="76" y="56" width="72" height="2" rx="1" fill="#534AB7"/>
+  <text x="76" y="74" fill="#534AB7" font-size="11" font-weight="500">已安装</text>
+  <text x="152" y="74" fill="#888780" font-size="11">技能市场</text>
+  <text x="228" y="74" fill="#888780" font-size="11">开发指引</text>
+
+  <!-- 搜索栏 -->
+  <rect x="76" y="84" width="588" height="28" rx="6" fill="#f5f5f4" stroke="#e5e5e0" stroke-width="0.5"/>
+  <text x="92" y="102" fill="#888780" font-size="10">🔍 搜索技能名称、触发词或类别...</text>
+
+  <!-- 已安装技能列表 -->
+  <!-- 技能卡片1 - 代码审查 -->
+  <rect x="76" y="122" width="286" height="130" rx="8" fill="#ffffff" stroke="#e5e5e0" stroke-width="0.5"/>
+  <rect x="88" y="134" width="28" height="28" rx="6" fill="#e6f1fb"/>
+  <text x="102" y="153" text-anchor="middle" fill="#378ADD" font-size="14">🔍</text>
+  <text x="124" y="146" fill="#2c2c2a" font-size="12" font-weight="500">代码审查专家</text>
+  <rect x="224" y="136" width="48" height="16" rx="4" fill="#eaf3de"/>
+  <text x="248" y="148" text-anchor="middle" fill="#3B6D11" font-size="8" font-weight="500">用户级</text>
+  <rect x="278" y="136" width="32" height="16" rx="4" fill="#cecbf6"/>
+  <text x="294" y="148" text-anchor="middle" fill="#3C3489" font-size="8">v1.2</text>
+  <text x="88" y="176" fill="#888780" font-size="9">自动分析代码质量、安全隐患和优化建议</text>
+  <text x="88" y="190" fill="#888780" font-size="9">按严重程度分级输出审查报告</text>
+  <text x="88" y="208" fill="#5F5E5A" font-size="9">触发词：代码审查 / code review / 检查代码</text>
+  <text x="88" y="224" fill="#888780" font-size="8">更新于 2026-05-14 · 使用 23 次</text>
+  <text x="316" y="224" fill="#534AB7" font-size="9">详情 →</text>
+
+  <!-- 技能卡片2 - 每日日报 -->
+  <rect x="378" y="122" width="286" height="130" rx="8" fill="#ffffff" stroke="#e5e5e0" stroke-width="0.5"/>
+  <rect x="390" y="134" width="28" height="28" rx="6" fill="#FAEEDA"/>
+  <text x="404" y="153" text-anchor="middle" fill="#D85A30" font-size="14">📰</text>
+  <text x="426" y="146" fill="#2c2c2a" font-size="12" font-weight="500">AI 动态日报</text>
+  <rect x="526" y="136" width="48" height="16" rx="4" fill="#E1F5EE"/>
+  <text x="550" y="148" text-anchor="middle" fill="#085041" font-size="8" font-weight="500">项目级</text>
+  <rect x="580" y="136" width="32" height="16" rx="4" fill="#cecbf6"/>
+  <text x="596" y="148" text-anchor="middle" fill="#3C3489" font-size="8">v2.0</text>
+  <text x="390" y="176" fill="#888780" font-size="9">抓取指定公众号最新文章</text>
+  <text x="390" y="190" fill="#888780" font-size="9">自动生成结构化日报摘要</text>
+  <text x="390" y="208" fill="#5F5E5A" font-size="9">触发词：日报 / AI动态 / 每日新闻</text>
+  <text x="390" y="224" fill="#888780" font-size="8">更新于 2026-05-15 · 使用 42 次</text>
+  <text x="618" y="224" fill="#534AB7" font-size="9">详情 →</text>
+
+  <!-- 技能卡片3 - 数据分析 -->
+  <rect x="76" y="262" width="286" height="130" rx="8" fill="#ffffff" stroke="#e5e5e0" stroke-width="0.5"/>
+  <rect x="88" y="274" width="28" height="28" rx="6" fill="#E1F5EE"/>
+  <text x="102" y="293" text-anchor="middle" fill="#0F6E56" font-size="14">📊</text>
+  <text x="124" y="286" fill="#2c2c2a" font-size="12" font-weight="500">数据分析助手</text>
+  <rect x="224" y="276" width="48" height="16" rx="4" fill="#eaf3de"/>
+  <text x="248" y="288" text-anchor="middle" fill="#3B6D11" font-size="8" font-weight="500">用户级</text>
+  <rect x="278" y="276" width="32" height="16" rx="4" fill="#cecbf6"/>
+  <text x="294" y="288" text-anchor="middle" fill="#3C3489" font-size="8">v1.0</text>
+  <text x="88" y="316" fill="#888780" font-size="9">读取 CSV/Excel 数据，自动分析趋势</text>
+  <text x="88" y="330" fill="#888780" font-size="9">生成图表和可视化报告</text>
+  <text x="88" y="348" fill="#5F5E5A" font-size="9">触发词：数据分析 / 统计 / 画图表</text>
+  <text x="88" y="364" fill="#888780" font-size="8">更新于 2026-05-12 · 使用 15 次</text>
+  <text x="316" y="364" fill="#534AB7" font-size="9">详情 →</text>
+
+  <!-- 技能卡片4 - 文档评审 -->
+  <rect x="378" y="262" width="286" height="130" rx="8" fill="#ffffff" stroke="#e5e5e0" stroke-width="0.5"/>
+  <rect x="390" y="274" width="28" height="28" rx="6" fill="#cecbf6"/>
+  <text x="404" y="293" text-anchor="middle" fill="#534AB7" font-size="14">📝</text>
+  <text x="426" y="286" fill="#2c2c2a" font-size="12" font-weight="500">文档评审专家</text>
+  <rect x="526" y="276" width="48" height="16" rx="4" fill="#eaf3de"/>
+  <text x="550" y="288" text-anchor="middle" fill="#3B6D11" font-size="8" font-weight="500">用户级</text>
+  <rect x="580" y="276" width="32" height="16" rx="4" fill="#cecbf6"/>
+  <text x="596" y="288" text-anchor="middle" fill="#3C3489" font-size="8">v1.1</text>
+  <text x="390" y="316" fill="#888780" font-size="9">评审会议纪要、合作协议等文档</text>
+  <text x="390" y="330" fill="#888780" font-size="9">多层审查：事实核对→规范评估→修订建议</text>
+  <text x="390" y="348" fill="#5F5E5A" font-size="9">触发词：评审 / 审查文档 / review</text>
+  <text x="390" y="364" fill="#888780" font-size="8">更新于 2026-05-13 · 使用 8 次</text>
+  <text x="618" y="364" fill="#534AB7" font-size="9">详情 →</text>
+
+  <!-- 底部：技能自学习提示 -->
+  <rect x="76" y="406" width="588" height="44" rx="8" fill="#cecbf6" opacity="0.15"/>
+  <rect x="76" y="406" width="588" height="44" rx="8" fill="transparent" stroke="#cecbf6" stroke-width="0.5"/>
+  <text x="92" y="424" fill="#3C3489" font-size="11" font-weight="500">💡 技能自学习</text>
+  <text x="92" y="440" fill="#5F5E5A" font-size="10">Agent 完成复杂任务后，可自动沉淀为新技能。最近沉淀：代码重构助手（5月14日）</text>
+  <text x="636" y="440" fill="#534AB7" font-size="9">查看</text>
+
+  <!-- 技能安全提示 -->
+  <rect x="76" y="460" width="588" height="32" rx="6" fill="#f5f5f4"/>
+  <text x="92" y="480" fill="#888780" font-size="9">🔒 安全策略：所有第三方技能安装前自动安全审计，P0 级风险需确认后方可启用</text>
+</svg>
