@@ -52,6 +52,7 @@ export function useChat() {
       const { event_type, data } = event.payload;
 
       if (event_type === 'content' && data.chunk) {
+        const chunk = data.chunk;
         // 添加内容片段
         setMessages((prev) => {
           const lastMsg = prev[prev.length - 1];
@@ -60,7 +61,7 @@ export function useChat() {
               ...prev.slice(0, -1),
               {
                 ...lastMsg,
-                content: lastMsg.content + data.chunk,
+                content: lastMsg.content + chunk,
               },
             ];
           }
@@ -70,7 +71,7 @@ export function useChat() {
             {
               id: `temp-${Date.now()}`,
               role: 'assistant' as const,
-              content: data.chunk,
+              content: chunk,
               timestamp: Date.now(),
             },
           ];
